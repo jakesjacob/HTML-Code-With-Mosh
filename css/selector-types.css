@@ -1,0 +1,34 @@
+/*! selector by type */
+body {
+  margin: 10px;
+}
+
+/*! selector by ID
+section#products 
+creates a section with the ID of products
+ */
+
+#products {
+  margin: 10px;
+}
+
+/*! selector by ID
+article.product*3
+creates 3 articles with class product with the ID of products
+ */
+
+.product {
+  margin: 10px;
+}
+
+/*! selector by attributes ------- often very fragile! */
+a[href="https:google.com"] {
+  color: orange;
+}
+
+/*! Stronger! ------ * checks if word in string */
+/*! Stronger! ------ ^ checks if word at start */
+/*! Stronger! ------ $ checks if word at end */
+a[href*="google"][href$=".com"] {
+  color: orange;
+}
