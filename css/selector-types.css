@@ -7,7 +7,6 @@ body {
 section#products 
 creates a section with the ID of products
  */
-
 #products {
   margin: 10px;
 }
@@ -16,7 +15,6 @@ creates a section with the ID of products
 article.product*3
 creates 3 articles with class product with the ID of products
  */
-
 .product {
   margin: 10px;
 }
@@ -25,10 +23,103 @@ creates 3 articles with class product with the ID of products
 a[href="https:google.com"] {
   color: orange;
 }
-
 /*! Stronger! ------ * checks if word in string */
 /*! Stronger! ------ ^ checks if word at start */
 /*! Stronger! ------ $ checks if word at end */
 a[href*="google"][href$=".com"] {
   color: orange;
+}
+
+/*! RELATIONAL CLASS SELECTORS */
+/*! descendant selector ----------- all p's in services will be orange */
+#services p {
+  color: orange;
+}
+/*! descendant selector ----------- first p in services will be orange */
+#services > p {
+  color: orange;
+}
+/*! descendant selector ----------- first sibling p in section after services will be orange */
+#services + p {
+  color: orange;
+}
+/*! descendant selector ----------- all sibling p in section after services will be orange */
+#services ~ p {
+  color: orange;
+}
+
+/*! PSUEDO CLASS SELECTORS : */
+article :first-child {
+  color: orangered;
+}
+article :first-of-type {
+  color: rgb(24, 10, 151);
+}
+article p:first-of-type {
+  color: rgb(68, 26, 11);
+}
+article :last-child {
+  color: rgb(11, 68, 11);
+}
+article :last-of-type {
+  color: rgb(11, 68, 11);
+}
+
+ul li:nth-child(odd) {
+  color: deeppink;
+}
+
+a:visited {
+  color: dodgerblue;
+}
+a:link {
+  color: firebrick;
+}
+/*! Should use focus as well as hover for people that use keyboards (tab to cycle) */
+a:hover,
+a:focus {
+  color: fuchsia;
+}
+
+/*! PSUEDO ELEMENT SELECTORS :: */
+p::first-letter {
+  font-weight: bold;
+}
+p::first-line {
+  font-size: 140%;
+}
+::selection {
+  background-color: hotpink;
+}
+p::before {
+  content: "...";
+  display: block;
+}
+p::after {
+  content: "The end";
+}
+
+/*! Selector weights
+ID selector
+.class and attribute selectors
+element selector
+*/
+
+.product#id {
+  background-color: hotpink;
+}
+h1#products {
+  background-color: indianred;
+}
+.featured #prodcuts {
+  background-color: indigo;
+}
+
+/*! Inheritance */
+p {
+  color: indigo;
+}
+strong {
+  color: initial;
+  border: inherit;
 }

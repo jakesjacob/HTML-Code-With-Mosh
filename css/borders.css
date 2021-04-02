@@ -1,0 +1,33 @@
+.border {
+  width: 600px;
+  height: 200px;
+  background: magenta;
+  border: 10px solid deeppink;
+  margin: 5px;
+}
+.border2 {
+  width: 600px;
+  height: 200px;
+  background: magenta;
+  border: 10px dotted deeppink;
+  margin: 5px;
+  border-top: 20px solid royalblue;
+}
+.border3 {
+  width: 600px;
+  height: 200px;
+  background: magenta;
+  border: 10px dashed deeppink;
+  margin: 5px;
+  border-width: 30px 10px 20px 30px; /* trbl */
+  /* border-style:
+    border-color */
+}
+.border3 {
+  width: 600px;
+  height: 200px;
+  background: magenta;
+  border: 10px dashed deeppink;
+  margin: 5px;
+  border-radius: 100%;
+}

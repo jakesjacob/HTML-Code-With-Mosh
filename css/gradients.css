@@ -1,0 +1,25 @@
+.gradient {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(to bottom right, dodgerblue, yellow 30%);
+}
+.gradient2 {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(to bottom right, dodgerblue, yellow, tomato);
+}
+.gradient3 {
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(dodgerblue, yellow, tomato);
+}
+.gradient4 {
+  width: 600px;
+  height: 200px;
+  background: radial-gradient(circle, dodgerblue, yellow, tomato);
+}
+.gradient5 {
+  width: 600px;
+  height: 200px;
+  background: radial-gradient(circle at top left, dodgerblue, yellow);
+}

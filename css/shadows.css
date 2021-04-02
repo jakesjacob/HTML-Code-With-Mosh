@@ -1,0 +1,20 @@
+.shadow {
+  width: 200px;
+  height: 200px;
+  background: seagreen;
+  margin: 100px;
+  /* box-shadow: horizontal value +right -left      vertical position */
+  box-shadow: 10px 10px 20px grey;
+}
+.shadow1 {
+  width: 200px;
+  height: 200px;
+  background: red;
+  margin: 100px;
+  /* box-shadow: horizontal value +right -left      vertical position */
+  box-shadow: 0px 0px 80px grey;
+}
+h1 {
+  color: white;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
