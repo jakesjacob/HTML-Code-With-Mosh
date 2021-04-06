@@ -1,0 +1,28 @@
+.boxes {
+  border: 3px solid lightblue;
+}
+
+.box {
+  width: 5rem;
+  height: 5rem;
+}
+
+.b-one {
+  background-color: lightcoral;
+}
+.b-two {
+  background-color: lightgreen;
+  position: relative;
+  left: 5rem;
+}
+.b-three {
+  background-color: lightslategrey;
+}
+
+/*! 
+
+relative: relative to elements normal position
+avosulte: relative to the parent
+fixed: relative to the viewport
+
+*/

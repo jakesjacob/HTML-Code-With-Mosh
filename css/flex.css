@@ -1,0 +1,25 @@
+/*! 
+
+justify-content is for along the main axis
+align-items is for along the corss axis
+
+*/
+
+.container {
+  border: 3px solid lightpink;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  flex-wrap: wrap; /*! wraps things to a new line  */
+  align-content: center;
+}
+
+.box {
+  width: 5rem;
+  height: 5rem;
+  background: lightseagreen;
+  margin: 1rem;
+  flex: 1 1 15rem; /*! flex grow. flex shrink. flex basis  */
+}
